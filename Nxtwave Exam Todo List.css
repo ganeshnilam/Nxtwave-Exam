@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    flex: 1 1 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+.task {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.task-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.task-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.task-controls button {
+    padding: 5px 8px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: #007bff;
+    color: white;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: black;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.task-meta {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 5px;
+}
